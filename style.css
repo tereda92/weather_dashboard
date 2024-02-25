@@ -1,0 +1,32 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.header {
+    background-color: #007bff;
+    color: #ffffff;
+    padding: 20px;
+    text-align: center;
+}
+
+.search__form {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.search__input {
+    padding: 10px;
+    margin-right: 10px;
+    width: 300px;
+}
+
+.search__button {
+    padding: 10px;
+    cursor: pointer;
+    background-color: #007bff;
+    border: none;
+    color: white;
+}
