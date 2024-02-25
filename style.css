@@ -2,13 +2,15 @@ body, html {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
+    border: 5px solid black;
+    box-sizing: border-box;
 }
 
 .header {
-    background-color: #007bff;
-    color: #ffffff;
+    color: black;
     padding: 20px;
     text-align: center;
+
 }
 
 .search__form {
@@ -30,3 +32,14 @@ body, html {
     border: none;
     color: white;
 }
+
+.dashboard {
+display: grid;
+grid-template-columns: repeat(auto-fill, minmax(250px,1fr));
+gap: 20px;
+}
+
+.dashboard__block {
+
+}
+
