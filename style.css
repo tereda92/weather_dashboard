@@ -35,28 +35,27 @@ body, html {
 
 .weather {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    gap: 20px;
-   
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px; 
+    padding: 20px; 
+}
 
-    .dashboard {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr); /* Creates three columns */
-        gap: 20px; /* Sets the gap between grid items */
-        padding: 20px; /* Adds some padding around the grid */
-      }
+.dashboard {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 20px; 
+    padding: 20px; 
+}
 
 .dashboard__block {
-    background-color: #fff; /* White background for each block */
-    border: 1px solid #e6e6e6; /* Light border for definition */
-    border-radius: 8px; /* Rounded corners */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-    margin: 10px; /* Space between blocks */
-    overflow: hidden; /* Ensures nothing spills out of the block */
-    display: flex; /* Makes it a flex container */
-    flex-direction: column; /* Stack children vertically */
-    justify-content: space-between; /* Distribute space around items */
-
+    background-color: #fff; 
+    border: 1px solid #e6e6e6; 
+    border-radius: 8px; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+    overflow: hidden; 
+    display: flex; 
+    flex-direction: column; 
+    justify-content: space-between; 
 }
 
 .dashboard__block--hourly {
