@@ -15,3 +15,58 @@ function handleSubmit(event) {
 
 const form = document.querySelector('.search__form');
 form.addEventListener('submit', handleSubmit);
+
+
+function fetchHourlyForecast() {
+    
+  }
+  
+ 
+  function fetchDailyForecast() {
+    
+  }
+  
+  
+  function fetchMapData() {
+    
+  }
+  
+
+  function fetchAttireRecommendation() {
+    
+  }
+  
+  
+  function fetchCurrentTemperature() {
+    
+  }
+  
+  
+  function fetchWindData() {
+    
+  }
+  
+  
+  function fetchUVIndex() {
+    
+  }
+  
+ 
+  function fetchRainfallData() {
+    
+  }
+  
+  
+  function fetchPressureData() {
+    
+  }
+  
+  
+  function updateDashboard() {
+    fetchHourlyForecast();
+    fetchDailyForecast();
+    
+  }
+  
+  
+  document.addEventListener('DOMContentLoaded', updateDashboard);

@@ -3,31 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Weather Dashboard</title>
+    <title>Local Weather Dashboard</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header class="header">
-        <h1 class="header__title">Weather Dashboard</h1>
-    </header>
-    <main class="main">
-        <section class="search">
-            <form class="search__form">
-                <input type="text" class="search__input" placeholder="Search for a city">
-                <button type="submit" class="search__button">Search</button>
-            </form>
-        </section>
-        <section class="weather dashboard">
-            <div class="dashboard__block dashboard__block--hourly">Hourly forecast</div>
-            <div class="dashboard__block dashboard__block--daily">Daily forecast</div>
-            <div class="dashboard__block dashboard__block--map">Map</div>
-            <div class="dashboard__block dashboard__block--attire">Recommended attire</div>
-            <div class="dashboard__block dashboard__block--Temperature">Todays Temperature</div>
-            <div class="dashboard__block dashboard__block--Wind">Wind</div>
-            <div class="dashboard__block dashboard__block--UV">UV index</div>
-            <div class="dashboard__block dashboard__block--rain">Rainfall</div>
-            <div class="dashboard__block dashboard__block--Pressure">Pressure</div>
-         </section>
-    </main>
+    <div class="weather-dashboard">
+        <header class="weather-dashboard__header">
+            <h1 class="weather-dashboard__title">San Francisco, CA</h1>
+            <button class="weather-dashboard__refresh-button">
+                <img src="refresh-icon.png" alt="Refresh Location">
+            </button>
+        </header>
+        <main class="weather-dashboard__main">
+            <section class="weather-dashboard__forecast">
+                <div class="forecast__block forecast__block--hourly">Hourly forecast</div>
+                <div class="forecast__block forecast__block--daily">Daily forecast</div>
+                <div class="forecast__block forecast__block--map">Map</div>
+                <div class="forecast__block forecast__block--attire">Recommended attire</div>
+                <div class="forecast__block forecast__block--temperature">Today's Temperature</div>
+                <div class="forecast__block forecast__block--wind">Wind</div>
+                <div class="forecast__block forecast__block--uv">UV index</div>
+                <div class="forecast__block forecast__block--rainfall">Rainfall</div>
+                <div class="forecast__block forecast__block--pressure">Pressure</div>
+            </section>
+        </main>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
+

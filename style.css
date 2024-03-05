@@ -1,98 +1,50 @@
-body, html {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
+.weather-dashboard {
     border: 5px solid black;
-    box-sizing: border-box;
+    max-width: 1200px;
+    margin: auto;
+    font-family: Arial, sans-serif;
 }
 
-.header {
-    color: black;
+.weather-dashboard__header {
+    background-color: #fff;
     padding: 20px;
     text-align: center;
+    position: relative; 
 }
 
-.search__form {
-    display: flex;
-    justify-content: center;
+.weather-dashboard__title {
+    margin: 0;
+    display: inline-block; 
+}
+
+.weather-dashboard__refresh-button {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.search-form__input,
+.search-form__button,
+.forecast__block {
+    text-align: center; 
+}
+
+.weather-dashboard__forecast {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 20px;
     padding: 20px;
 }
 
-.search__input {
-    padding: 10px;
-    margin-right: 10px;
-    width: 300px;
-}
-
-.search__button {
-    padding: 10px;
-    cursor: pointer;
-    background-color: #007bff;
-    border: none;
-    color: white;
-}
-
-.weather {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px; 
-    padding: 20px; 
-}
-
-.dashboard {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); 
-    gap: 20px; 
-    padding: 20px; 
-    justify-content: center;
-}
-
-.dashboard__block {
-    background-color: #fff; 
-    border: 1px solid #e6e6e6; 
-    border-radius: 8px; 
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
-    overflow: hidden; 
-    display: flex; 
-    flex-direction: column; 
-    justify-content: space-between; 
-    width: 300px;
-    height: 180px;
-    padding:20px;
-}
-
-.dashboard__block--hourly {
-   
-}
-
-.dashboard__block--daily {
-
-}
-
-.dashboard__block--map {
-
-}
-
-.dashboard__block--attire {
-
-}
-
-.dashboard__block--Temperature {
-
-}
-
-.dashboard__block--Wind {
-
-}
-
-.dashboard__block--UV {
-
-}
-
-.dashboard__block--rain {
-
-}
-
-.dashboard__block--Pressure {
-
+.forecast__block {
+    background-color: #fff;
+    border: 1px solid #e6e6e6;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    height: 200px; 
 }
