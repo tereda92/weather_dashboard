@@ -19,12 +19,17 @@
 
 .weather-dashboard__refresh-button {
     position: absolute;
-    right: 20px;
+    right: 45px;
     top: 50%;
     transform: translateY(-50%);
-    background: none;
     border: none;
+    background: none;
     cursor: pointer;
+}
+
+    .weather-dashboard__refresh-button img {
+        width: 40px;
+        height: auto;
 }
 
 .search-form__input,
