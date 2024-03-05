@@ -11,7 +11,7 @@
         <header class="weather-dashboard__header">
             <h1 class="weather-dashboard__title">San Francisco, CA</h1>
             <button class="weather-dashboard__refresh-button">
-                <img src="icons\location-svgrepo-com.svg" alt="Refresh Location">
+                <img src="icons/location-svgrepo-com.svg" alt="Refresh Location">
             </button>
         </header>
         <main class="weather-dashboard__main">
@@ -28,7 +28,15 @@
             </section>
         </main>
     </div>
+    <div id="searchModal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <form id="locationForm" class="search__form">
+                <input type="text" id="locationInput" placeholder="Enter city or zip code">
+                <button type="submit">Search</button>
+            </form>
+        </div>
+    </div>
     <script src="script.js"></script>
 </body>
 </html>
-
