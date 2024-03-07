@@ -2,10 +2,8 @@ document.addEventListener('DOMContentLoaded', function() {
     const apiKey = 'a95f542405aaa2cf91ffc213f2efa40c';
     const form = document.querySelector('.search__form');
     form.addEventListener('submit', handleSubmit);
-
     const refreshButton = document.querySelector('.weather-dashboard__refresh-button');
     refreshButton.addEventListener('click', openSearchModal);
-
     const closeButton = document.querySelector('.close-button');
     closeButton.addEventListener('click', closeModal);
 
@@ -41,9 +39,9 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     function updateDashboard(data) {
-        document.querySelector('.weather-dashboard__title').textContent = `${data.name}, ${data.sys.country}`;
+        document.querySelector('.weather-dashboard__title').textContent = `Weather Dashboard`;
+        document.querySelector('.current-city').textContent = `Current City: ${data.name}, ${data.sys.country}`;
         document.querySelector('.forecast__block--temperature').innerHTML = `Today's Temperature: ${data.main.temp}°C`;
         document.querySelector('.forecast__block--wind').innerHTML = `Wind: ${data.wind.speed} m/s`;
-        document.querySelector('.forecast__block--uv').innerHTML = `UV Index: Placeholder`;
     }
 });

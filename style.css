@@ -4,19 +4,20 @@
     margin: auto;
     font-family: Arial, sans-serif;
 }
-
 .weather-dashboard__header {
     background-color: #fff;
     padding: 20px;
     text-align: center;
     position: relative; 
 }
-
 .weather-dashboard__title {
     margin: 0;
     display: inline-block; 
 }
-
+.current-city {
+    margin-top: 10px;
+    font-size: 18px;
+}
 .weather-dashboard__refresh-button {
     position: absolute;
     right: 45px;
@@ -26,25 +27,16 @@
     background: none;
     cursor: pointer;
 }
-
 .weather-dashboard__refresh-button img {
     width: 40px;
     height: auto;
 }
-
-.search-form__input,
-.search-form__button,
-.forecast__block {
-    text-align: center; 
-}
-
 .weather-dashboard__forecast {
     display: grid;
     grid-template-columns: repeat(3, 1fr); 
     gap: 20px;
     padding: 20px;
 }
-
 .forecast__block {
     background-color: #fff;
     border: 1px solid #e6e6e6;
@@ -53,7 +45,6 @@
     padding: 20px;
     height: 200px; 
 }
-
 .modal {
     display: none;
     position: fixed;
@@ -65,7 +56,6 @@
     overflow: auto;
     background-color: rgba(0,0,0,0.4);
 }
-
 .modal-content {
     background-color: #fefefe;
     margin: 15% auto;
@@ -74,14 +64,12 @@
     width: 80%;
     max-width: 500px;
 }
-
 .close-button {
     color: #aaa;
     float: right;
     font-size: 28px;
     font-weight: bold;
 }
-
 .close-button:hover,
 .close-button:focus {
     color: black;
